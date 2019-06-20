@@ -1,0 +1,202 @@
+@font-face { font-family: Ubuntu-bold; 
+    src: url('../fonts//Ubuntu/Ubuntu-Bold.ttf'); 
+}
+
+@font-face { font-family: Ubuntu-medium; 
+    src: url('../fonts//Ubuntu/Ubuntu-Medium.ttf'); 
+}
+@font-face { font-family: Ubuntu-regular; 
+    src: url('../fonts//Ubuntu/Ubuntu-Regular.ttf'); 
+}
+
+@font-face { font-family: Ubuntu-light; 
+    src: url('../fonts//Ubuntu/Ubuntu-Light.ttf'); 
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #568CAB;
+        opacity: .5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #568CAB;  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #568CAB;  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu-regular;
+
+}
+body{
+    overflow-x:hidden;
+    background: rgba(210, 82, 82, 0.47);
+}
+body section{
+    padding: 10vh 0vw;
+    border-radius: 10vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.82);
+}
+@media (min-width:760px){
+    body section{
+       
+        border-radius: 8vw;
+        
+    } 
+}
+body section p:nth-of-type(1){
+    text-align: center;
+    color: #4375A4;
+    font-size: 2.5em;
+    font-family: Ubuntu-bold;
+    background-color: white;
+    padding: 1vw 0;
+}
+body section p:nth-of-type(2){
+    text-align: center;
+    color: #555555;
+     font-size: 1.2em;
+     padding-top: 1em;
+    font-family: Ubuntu-regular;
+}
+body section form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    height: 50vh;
+}
+
+body section form input[placeholder]{
+    color: #4375A4;
+    background-color: transparent;
+    font-size: 1.8em;
+    padding-bottom: .5em;
+}
+
+body section form input:focus{
+    outline: none;
+}
+body section form input:nth-of-type(1),body section form input:nth-of-type(2){
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    width: auto;
+    padding-right: .5em;
+}
+
+body section form input:nth-of-type(3){
+    padding: .5em 3em;;
+    background: #D25252;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    color:white;
+    font-size: 1.8em;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+body section form input:nth-of-type(3):hover{
+    
+    color: rgb(214, 205, 205);
+
+}
+body section form input:nth-of-type(3):disabled,
+body section form input:nth-of-type(3):disabled:active,
+body section form input:nth-of-type(3):disabled:hover{
+    
+    background: #c5c5c5;
+    color: rgb(179, 165, 165);
+    cursor: not-allowed;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.027);
+
+
+}
+
+body section form input:nth-of-type(3):disabled:active{
+    
+    background: #555555;
+    color: #999;
+
+}
+
+body section form input:nth-of-type(3):active{
+    
+    color: rgba(240, 168, 168, 0.747);
+
+}
+
+@media (min-width:768px){
+    body section form input:nth-of-type(1),body section form input:nth-of-type(2){
+        border: 0;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        width: auto;
+        padding-right: .5em;
+    }
+
+    body section p:nth-of-type(2){
+        
+         font-size: 1.5em;
+         padding-top: 2em;
+    }
+}
+
+
+
+
+body section p:nth-of-type(4),body section p:nth-of-type(3){
+    text-align: center;
+    color: #555555;
+     font-size: 1.5em;
+    font-family: Ubuntu-regular;
+}
+
+body section p:nth-of-type(3) a{
+    text-align: center;
+    color: #4375A4;
+    font-family: Ubuntu-bold;
+    text-decoration: none;
+}
+body section p:nth-of-type(4) a{
+    text-align: center;
+    color: rgba(210, 82, 82, 0.47);
+    font-family: Ubuntu-bold;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+@media(max-width:420px){
+    body section form input[placeholder]{
+        font-size: 1em;
+        padding-bottom: .5em;
+    }
+
+    body section form input:nth-of-type(1),body section form input:nth-of-type(2){
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding-right: .3em;
+    }
+    body section p:nth-of-type(4) a{
+       
+        font-size: 1.4em;
+    }
+}
+
+.pass-info{
+    justify-self: flex-end;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1em;
+    font-family: Ubuntu-medium;
+    color: rgb(248, 247, 247);
+    background-color: rgba(201, 109, 109, 0.863)
+}
+
+
+
+/* body section div{
+    padding: 5vw 15vw;
+} */

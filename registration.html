@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SignUp | Cecula</title>
+    <link rel="stylesheet" type="text/css" href="signup.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="first">
+          CREATE YOUR ACCOUNT
+        </h1>
+        <h2 class="create">
+          Create an Account With Us Today to Start Using Our Features.
+        </h2>
+      </header>
+      <section class="inputs">
+        <form id="formm" action="#" method="POST">
+          <article class="name">
+            <input
+              type="text"
+              name="FirstName"
+              placeholder="FirstName"
+              required="required"
+              max-lenght="16"
+              id="firstName"
+            />
+            <input
+              type="text"
+              name="LastName"
+              placeholder="LastName"
+              required="required"
+              max-lenght="16"
+              id="lastName"
+            />
+          </article>
+          <article class="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="EnterPassword"
+              id="password"
+              class="pass"
+            />
+            <input type="checkbox" id="chk" onclick="toggle()" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Confirm Password"
+              id="confirm_password"
+            />
+          </article>
+          <article class="mail">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required="required"
+              id="email"
+            />
+            <input
+              type="text"
+              name="Username"
+              placeholder="Username"
+              required="required"
+              maxlength="12"
+              id="userName"
+            />
+          </article>
+          <input type="submit" class="submit" name="" value="SIGN UP" />
+        </form>
+      </section>
+      <secction class="last">
+        <footer class="login">
+          Already Have An Account ? <a href="index.html">Login </a>
+        </footer>
+        <footer class="Cecular">Cecular</footer>
+      </secction>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
